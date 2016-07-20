@@ -2186,6 +2186,7 @@ $.extend(Popup.prototype, {
         setTimeout(function () {
             self.$root.addClass('instashow-show');
         });
+        printme();
     },
     close: function () {
         var self = this;
@@ -3114,6 +3115,7 @@ views['popup']['media'] = Handlebars.template({
     },
     '25': function (depth0, helpers, partials, data) {
         var stack1;
+
         return '<div class="instashow-popup-media-info-content"> ' + ((stack1 = helpers['if'].call(depth0, (stack1 = depth0 != null ? depth0.options : depth0) != null ? stack1.hasDescription : stack1, {
             'name': 'if',
             'hash': {},
@@ -3126,7 +3128,7 @@ views['popup']['media'] = Handlebars.template({
             'fn': this.program(28, data, 0),
             'inverse': this.noop,
             'data': data
-        })) != null ? stack1 : '') + '</div> ';
+        })) != null ? stack1 : '') + "<button class='print'>YAZDIR</button></div>";
     },
     '26': function (depth0, helpers, partials, data) {
         var stack1, alias1 = this.lambda, alias2 = this.escapeExpression;
