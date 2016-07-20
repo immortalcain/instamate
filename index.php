@@ -18,6 +18,12 @@ error_reporting(0);
 .instashow-popup-wrapper {right: auto;}
 div.instashow-popup-container {padding: 139px 58px;}
 .instashow-popup-media-has-comments {width: auto;}
+
+}
+button.print {
+    position: absolute;
+    bottom: 30px;
+    width: 35%;
 }
 </style>
 <script type="text/javascript">
@@ -33,7 +39,7 @@ function printme() {
 
 <body>
 	
-	<div data-is	
+	<div class="my-instashow" data-is	
      data-is-api="instashow/api/"
      data-is-source="#aklimdangecen"
      data-is-width="auto"
@@ -44,7 +50,6 @@ function printme() {
      data-is-lang="tr">
 	</div>
 
-	<div class="my-instashow"></div>
 
 <img class="cover-pic" src="cover.png">
 </body>
